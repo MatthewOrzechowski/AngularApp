@@ -1,0 +1,34 @@
+<div data-ng-app="sampleApp" data-ng-controller="View3Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	<div class="occupancyContainer">
+		<form name="OccupancyForm">
+	    	<label for="OccupancySelect" id="occupancyform"> What is the planned occupancy of this home? </label>
+			<select name="OccupancySelect" data-placeholder="" ng-model="data.selectedOccupancy" class="optionsControl" ng-options="option.name for option in data.options track by option.id">
+				<option value="" disabled selected>Please Select...</option>
+			</select> 
+		<div class="recentOccupancy">
+			Have you had any ownership interest in a property in the last 3 years?
+			<div class="checkcontainer">
+    		<input type="checkbox" ng-click="checkedYes()" ng-checked="selected=='yes'" ng-true-value="'yes'" id="yes" ng-model="selected">
+    		<div id="yestext">Yes</div>
+   		 	<input type="checkbox" ng-click="checkedNo()" ng-checked="selected=='no'" ng-true-value="'no'" id="no" ng-model="selected">
+   		 	<div id="notext">No</div>
+    	</div>
+  </div>
+		</div>
+
+
+	<br>
+	<a href="#!/view2"> 
+		<button id="back"> Go Back </button> 
+	</a>
+
+	<a href="#!/view4"> 
+		<button id="next"> Next </button> 
+	</div>
+</div>

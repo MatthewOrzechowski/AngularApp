@@ -1,0 +1,24 @@
+<div data-ng-app="sampleApp" data-ng-controller="View8Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	<div class="typeContainer">
+		<form name="typeForm">
+	    	<label for="typeSelect" id="typeform"> What is your credit score? </label>
+	    	<div id="credithelp">Select an estimate of your credit score so we can provide an approximation of your rate. We are not checking credit at this stage. </div>
+	    	<div id="score"> {{ creditScore }} </div>
+	    	<input type="range" ng-model="creditScore" min="620" max="740" value="680" step="1" class="range" id="creditscore"> </input>
+	    	<div id="minscore"> 620 and Below </div>
+	    	<div id="maxscore"> 740 and Above </div>
+
+	</div>
+
+
+	<br>
+	<a href="#!/view7"> 
+		<button id="back"> Go Back </button> 
+	</a>
+</div>

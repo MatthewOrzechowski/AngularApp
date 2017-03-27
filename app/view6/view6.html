@@ -1,0 +1,38 @@
+<div data-ng-app="sampleApp" data-ng-controller="View6Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	    <p id="chooseProgram">
+			What are you looking to do?
+		</p>
+	<div class="programSelect">
+		<div class="loanProgram" id="shortterm">
+			<img src="http://www.hodgsonco.com/wp-content/uploads/2011/12/dollar.jpg" id='dsign'>
+			<br>
+			<p id="invtext">Investor </p>
+			<p id="invdetails"> Invest in Commercial Real Estate or Residential Real Estate </p>
+			<a href="#!/view6"> 
+				<button class="button" id="invbutton"> Commerical </button>
+			</a>
+			<a href="#!/view6"> 
+				<button class="button" id="invbutton"> Residential </button>
+			</a>
+		</div>
+		<div class="loanProgram" id="borterm">
+			<img src="http://www.homesforsalehelena.com/wp-content/uploads/2014/03/house.png" id='house'>
+			<br>
+			<p id="bortext">Borrower </p>
+			<p id="bordetails"> Qualify for financing for Residential or Commerial Mortgages, or manage Residential or Commercial Equity</p>
+			<a href="#!/view5">
+				<button class="button" ng-click="" id="borbutton"> Qualify </button>
+			</a>
+		</div>
+	</div>
+	<a href="#!/view6"> 
+		<button id="back"> Go Back </button> 
+	</a>
+	</div>
+</div>

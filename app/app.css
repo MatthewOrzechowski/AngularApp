@@ -1,0 +1,521 @@
+/* app css stylesheet */
+
+.container {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	pointer-events: auto;
+}
+
+.backgroundimage {
+	pointer-events: none;
+	z-index: 0;
+	background-image: url("https://www.jetblue.com/img/vacations/destination/NewYorkSkyline_960x420.jpg");
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background-size: auto 100%;
+	background-position: center;
+	opacity: 1;
+}
+
+.menu {
+	list-style: none;
+	margin-bottom: 2em;
+	padding: 0 0 0.5em;
+	background-color: #4099ff;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: -10px;
+}
+
+.menu:before {
+}
+
+.menu:after {
+}
+
+.menu > li {
+  display: inline;
+}
+
+#firstli {
+	margin-left: 5px;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.page1 {
+	pointer-events: auto;
+}
+
+.page2 {
+	pointer-events: auto;
+	height: 200px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	color: black;
+	font-size: 16px;
+	margin-left: 2px;
+}
+
+#title {
+	position: absolute;
+	font-family: sans-serif;
+	left: calc(50% - 147px);
+	font-size: 72px;
+	top: 120px;
+	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+}
+
+#subtitle {	
+	position: absolute;
+	left: calc(50% - 245px);
+	font-size: 36px;
+	top: 250px;
+	color: white;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+}
+
+#begin {
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 350px;
+}
+
+#butto {
+	position: absolute;
+	left: 50%;
+	margin-left: -123px;
+	width: 240px;
+	height: 50px;
+	background: none;
+	border: 3px solid white;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+}
+
+#chooseProgram {
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.programSelect {
+	left: 50%;
+	width: 600px;
+	height: 420px;
+	margin: 0 auto;
+	background-color: white;
+	border:  3px solid gray;
+	border-radius: 10px;
+}
+
+.loanProgram {
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	height: 370px;
+	width: 250px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#shortterm {
+	position: relative;
+	left: 5%;
+	top: 20px;
+}
+
+#shorttext {
+
+}
+
+#shortdetails {
+	font-size: 12px;
+}
+
+
+#clock {
+	position: relative;
+	width: 100px;
+}
+
+#longterm {
+	position: absolute;
+	left: 52.5%;
+	top: 143px;
+}
+
+#longtext {
+	margin-top: 0;
+}
+
+#longdetails {
+	font-size: 12px;
+}
+
+#keys {
+	padding-top: 5px;
+	width: 110px;
+}
+
+.button {
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 50px;
+	color: black;
+	background-color: white;
+	border: 2px solid #4099ff;
+}
+
+#shortbutton {
+	position: relative;
+	margin-top: 100px;
+
+}
+
+#longbutton {
+	position: relative;
+	margin-top: 80px;
+}
+
+#back {
+	position: absolute;
+	bottom: 80px;
+	left: 40px;
+	width: 100px;
+	height: 40px;
+	border-radius: 50px;
+	color: black;
+	background-color: white;
+	border: 2px solid #4099ff;
+}
+
+#next {
+	position: absolute;
+	bottom: 80px;
+	right: 50px;
+	width: 100px;
+	height: 40px;
+	border-radius: 50px;
+	color: black;
+	background-color: white;
+	border: 2px solid #4099ff;
+}
+
+.occupancyContainer {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: -10px;
+	border: 2px solid gray;
+	border-radius: 7px;
+	width: 600px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#occupancyform {
+	display: block;
+	font-size: 26px;
+}
+
+.optionsControl {
+	border-radius: 2px;
+	color: #333;
+	background: none;
+	text-align: left;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 3px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1.5px solid #EBEBEB;
+    border-radius: 4px;
+}
+
+.recentOccupancy {
+	margin-top: 35px;
+}
+
+.checkcontainer {
+	margin-top: 20px;
+	margin-left: -440px;
+	height: 100px;
+}
+
+#yes {	
+	margin-left: -18px;
+	margin-top: -250px;
+}
+
+#no {
+	margin-top: -10px;
+	margin-left: -19.5px;
+}
+
+#yestext {
+	margin-top: -20px;
+	margin-left: 27px;
+}
+
+#notext {
+	margin-top: -20px;
+	margin-left: 27px;
+}
+
+.typeContainer {
+	text-align: center;
+	padding-top: 50px;
+	border: 2px solid gray;
+	border-radius: 7px;
+	width: 600px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#typeform {
+	display: block;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.input {
+	display: block;
+	font-size: 16px;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+#zipinput {
+	width: 510px;
+	height: 35px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#propertytype {
+	width: 510px;
+	height: 35px;
+
+}
+
+#invbutton {
+	position: relative;
+	margin-top: 15px;
+
+}
+
+#borbutton {
+	position: relative;
+	margin-top: 27px;
+}
+
+
+#invterm {
+	position: relative;
+	left: 5%;
+	top: 20px;
+}
+
+#invtext {
+	margin-top: 7px;
+}
+
+#invdetails {
+	font-size: 12px;
+}
+
+#house {
+	padding-top: 5px;
+	width: 110px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+
+#dsign {
+	position: relative;
+	width: 100px;
+	margin-top: 20px;
+}
+
+#borterm {
+	position: absolute;
+	left: 52.5%;
+	top: 143px;
+}
+
+#bortext {
+	margin-top: 0;
+}
+
+#bordetails {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.smallContainer {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: -10px;
+	border: 2px solid gray;
+	border-radius: 7px;
+	width: 600px;
+	height: 190px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+#purchorfinance {
+	margin-top: 22.5px;
+}
+
+#purchase {	
+	margin-left: -18px;
+	margin-top: -230px;
+}
+
+#purchasetext {
+	margin-top: -20px;
+	margin-left: 70px;
+}
+
+#refinance {
+	margin-top: -10px;
+	margin-left: -19.5px;
+}
+
+#refinancetext {
+	margin-top: -20px;
+	margin-left: 74px;
+}
+
+#askinginput {
+	width: 250px;
+	height: 30px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#downinput {
+	width: 250px;
+	height: 30px;
+	margin-left: 315px;
+	margin-top: -30px;
+}
+
+#askingtext {
+	text-align: left;
+	font-size: 14px;
+	margin-top: 2px;
+	margin-left: 33px;
+}
+
+#downtext {
+	text-align: left;
+	font-size: 14px;
+	margin-top: -19.5px;
+	margin-left: 320px;
+}
+
+#helptext {
+	font-size: 12px;
+	color: #888888;
+	text-align: left;
+	margin-top: 32px;
+	margin-left: 25px;
+	padding-right: 30px;
+}
+
+#resulterror {
+	position: absolute;
+	left: 52.2%;
+	top: 32.5%;
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+
+#creditscore {
+	width: 400px;
+	margin-top: 15px;
+}
+
+#minscore {
+	font-size: 12px;
+	text-align: left;
+	margin-top: -27.5px;
+	margin-left: 10px;
+}
+
+#maxscore {
+	font-size: 12px;
+	text-align: left;
+	margin-top: -16.5px;
+	margin-left: 510px;
+}
+
+#credithelp {
+	color: #444444;
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 18px;
+	margin-bottom: 5px;
+}
+
+#score {
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+

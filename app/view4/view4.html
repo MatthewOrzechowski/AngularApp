@@ -1,0 +1,29 @@
+<div data-ng-app="sampleApp" data-ng-controller="View4Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	<div class="typeContainer">
+		<form name="typeForm">
+	    	<label for="typeSelect" id="typeform"> Tell us more about the home you are looking for </label>
+
+	    	<input type="text" name="zip" class="input" id="zipinput" ng-model="zipcode" value="{{ zipcode }}" maxlength="5"placeholder="Zip Code">
+	    	</input>
+			<select name="OccupancySelect" data-placeholder="" ng-model="data.propertyType" id="propertytype" class="optionsControl" ng-options="option.name for option in data.options track by option.id">
+				<option value="" disabled selected>Property Type</option>
+			</select> 
+  </div>
+		</div>
+
+
+	<br>
+	<a href="#!/view3"> 
+		<button id="back"> Go Back </button> 
+	</a>
+
+	<a href="#!/view7"> 
+		<button id="next"> Next </button> 
+	</div>
+</div>

@@ -1,0 +1,30 @@
+<div data-ng-app="sampleApp" data-ng-controller="View5Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	<div class="smallContainer">
+		<form name="OccupancyForm">
+	    	<label for="OccupancySelect" id="occupancyform"> Are you looking to purchase a new home, or refinance your current mortgage? </label>
+		<div id="purchorfinance">
+			<div class="checkcontainer">
+    		<input type="checkbox" ng-click="checkedPurchase()" ng-checked="selected=='purchase'" ng-true-value="'purchase'" id="purchase" ng-model="selected">
+    		<div id="purchasetext">Purchase</div>
+   		 	<input type="checkbox" ng-click="checkedRefinance()" ng-checked="selected=='refinance'" ng-true-value="'refinance'" id="refinance" ng-model="selected">
+   		 	<div id="refinancetext">Refinance</div>
+    	</div>
+  </div>
+		</div>
+
+
+	<br>
+	<a href="#!/view6"> 
+		<button id="back"> Go Back </button> 
+	</a>
+
+	<a href="#!/view2"> 
+		<button id="next"> Next </button> 
+	</div>
+</div>

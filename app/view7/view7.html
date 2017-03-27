@@ -1,0 +1,33 @@
+<div data-ng-app="sampleApp" data-ng-controller="View7Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	<div class="typeContainer">
+		<form name="typeForm">
+	    	<label for="typeSelect" id="typeform"> What is the asking price for the property, and how much do you plan to put down upfront? </label>
+
+	    	<input type="text" name="askingprice" class="input" id="askinginput" ng-model="askingprice" value="{{ askingprice }}" placeholder="$">
+	    	</input>
+
+	    	<input type="text" name="downpayment" ng-change="checkDownPayment()" class="input" id="downinput" ng-model="downpayment" value="{{ downpayment }}" placeholder="$">
+	    	</input>
+	    	<div id="resulterror"> Must be at least 5% of the Asking Price </div> 
+	    	<div id="askingtext"> Asking Price </div>
+	    	<div id="downtext"> Down Payment </div>
+	    	<div id="helptext"> A larger down payment means a lower interest rate and a smaller monthly mortgage payment, which will save you money in the long run. </div>
+  </div>
+		</div>
+
+
+	<br>
+	<a href="#!/view3"> 
+		<button id="back"> Go Back </button> 
+	</a>
+
+	<a href="#!/view8"> 
+		<button id="next"> Next </button> 
+	</div>
+</div>

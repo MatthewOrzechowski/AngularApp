@@ -1,0 +1,37 @@
+<div data-ng-app="sampleApp" data-ng-controller="View2Ctrl">
+	<div class="page2">
+		<ul class="menu">  
+	  	  <li id="firstli"><a href="#!/view1"> Home</a></li>
+	      <li><a href="#!/view2">Borrowing</a></li>
+	      <li><a href="#!/view9">Investing</a></li>
+	    </ul>
+	    <p id="chooseProgram">
+			Choose the program that is right for you.
+		</p>
+	<div class="programSelect">
+		<div class="loanProgram" id="shortterm">
+			<img src="view2/assets/clock.png" id='clock'>
+			<br>
+			<p id="shorttext"> Short-Term Bridge Loan</p>
+			<p id="shortdetails"> Loan Term: 12 Months</p>
+			<p id="shortdetails"> Loan Type: Interest Only</p>
+			<a href="#!/view3"> 
+				<button class="button" ng-click="updateShortTerm()" id="shortbutton"> Get Your Rate </button>
+			</a>
+		</div>
+		<div class="loanProgram" id="longterm">
+			<img src="view2/assets/keys.png" id='keys'>
+			<br>
+			<p id="longtext">Owner Occupant</p>
+			<p id="longdetails"> Loan Term: 30 Years</p>
+			<p id="longdetails"> Loan Type: Fixed Rate, Adjustable Rate Mortgage (ARM), or Interest Only</p>
+			<a href="#!/view3">
+				<button class="button" ng-click="updateLongTerm()" id="longbutton"> Get Your Rate </button>
+			</a>
+		</div>
+	</div>
+	<a href="#!/view5"> 
+		<button id="back"> Go Back </button> 
+	</a>
+	</div>
+</div>
